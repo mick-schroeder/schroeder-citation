@@ -423,7 +423,7 @@ class Container extends React.Component {
 		if(hasCreatedItem) {
 			if(!localStorage.getItem('schroeder-cite-translated')) {
 				localStorage.setItem('schroeder-cite-translated', 'true');
-				this.displayFirstCitationMessage();
+				//this.displayFirstCitationMessage();
 			}
 		}
 	}
@@ -954,7 +954,7 @@ class Container extends React.Component {
 		}
 		if(!localStorage.getItem('schroeder-cite-translated')) {
 			localStorage.setItem('schroeder-cite-translated', 'true');
-			this.displayFirstCitationMessage();
+			//this.displayFirstCitationMessage();
 		}
 	}
 
@@ -1035,7 +1035,7 @@ class Container extends React.Component {
 
 		if(this.state.itemUnderReview.creators[0].lastName && 
 				this.state.itemUnderReview.creators[0].firstName &&
-				this.state.itemUnderReview.journalAbbreviation &&
+				(this.state.itemUnderReview.journalAbbreviation || this.state.itemUnderReview.publicationTitle) &&
 				this.state.itemUnderReview.date &&
 				this.state.itemUnderReview.title){
 
@@ -1046,8 +1046,17 @@ class Container extends React.Component {
 			var firstName = filenamify(this.state.itemUnderReview.creators[0].firstName);
 			
 			var dash = ' - ';
+
+			var journalAbbreviation = '';
+
+			if(this.state.itemUnderReview.journalAbbreviation) {
+			journalAbbreviation = filenamify(this.state.itemUnderReview.journalAbbreviation);
+			}
 			
-			var journalAbbreviation = filenamify(this.state.itemUnderReview.journalAbbreviation);
+			else if(this.state.itemUnderReview.publicationTitle) {
+			journalAbbreviation = filenamify(this.state.itemUnderReview.publicationTitle);
+			}
+			
 			var dateStart = ' (';
 			
 			var date = this.state.itemUnderReview.date;

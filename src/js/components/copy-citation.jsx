@@ -49,17 +49,18 @@ class ExportDialog extends React.Component {
 	}
 
 	handleCopy(format) {
-		
-		var text;
-		
+			
+		var copyData = '';
+		var copyFormat = 'text/plain';
+
 		if(format === 'filename'){
-			text = this.props.getFilenameCopyData(format);
+			copyData = this.props.getFilenameCopyData(format);
 		}
 		else {
-			text = this.props.getCitationCopyData(format);
+			copyData = this.props.getCitationCopyData(format);
 		}
 
-		const result = copy(text, {format: 'text/plain'});
+		const result = copy(copyData, {format: copyFormat});
 
 		if(result) {
 			this.handleClipoardSuccess(format);
