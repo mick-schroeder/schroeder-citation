@@ -275,9 +275,10 @@ class About extends React.PureComponent {
 						Cool. Cool-cool-cool. Let’s start!
 					</Button>
 					<p className="support">
-						<span className="d-xs-block d-sm-inline">Still have questions?</span>
+						
+						{/* <span className="d-xs-block d-sm-inline">Still have questions?</span> */}
 						{ ' ' }
-						Check the <a href="/faq.html">Frequently Asked Questions (FAQ)</a></p>
+						{/* Check the <a href="/faq.html">Frequently Asked Questions (FAQ)</a> */}
 						<a href="https://github.com/mick-schroeder/schroeder-citation">
 						<img
 									src="/static/images/openmoji/E045.svg"
@@ -285,9 +286,9 @@ class About extends React.PureComponent {
 									height="66"
 									alt=""
 						/><br/>
-						Open-Source Software<br/>
+						Open-Source Software based on ZoteroBib<br/>
 						Code available on GitHub
-						</a>
+						</a></p>
 			</section>
 		);
 	}

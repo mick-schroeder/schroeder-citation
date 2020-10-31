@@ -11,6 +11,7 @@ class Footer extends React.PureComponent {
 				</nav>
 				<div className="container">
 				<small className="copyright">
+					ZoteroBib is copyright © 2018 <a href="http://digitalscholar.org/">Corporation for Digital Scholarship</a><br/>
 					© { (new Date()).getFullYear() } Mick Schroeder, LLC. All Rights reserved.
 					<p>
 					<a href="/terms.html">Terms of Use & Privacy Policy</a>
