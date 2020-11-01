@@ -15,7 +15,7 @@ class Footer extends React.PureComponent {
 					<br/>
 					All emojis designed by <a href="https://openmoji.org/" rel="nofollow">OpenMoji</a> – the open-source emoji and icon project. License: <a href="https://creativecommons.org/licenses/by-sa/4.0/#" rel="nofollow">CC BY-SA 4.0</a>
 					<br/>
-					© 2020 Mick Schroeder, LLC. License: <a href="https://www.gnu.org/licenses/agpl.html" rel="nofollow">GNU AGPL</a>.
+					© 2020 Mick Schroeder, LLC. License: <a href="https://www.gnu.org/licenses/agpl.html" rel="nofollow">GNU AGPL</a>
 					<p>
 					<a href="/terms.html">Terms of Use & Privacy Policy</a>
 					</p>

@@ -14,7 +14,7 @@ class About extends React.PureComponent {
 			<section className="section section-about about">
 					<section className="features">
 						<div className="row">
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F4D1.svg"
@@ -32,7 +32,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F310.svg"
@@ -51,7 +51,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F4D8.svg"
@@ -65,12 +65,12 @@ class About extends React.PureComponent {
 									Enter a PMID (PubMed ID) or URL
 											<ul>
 												<li><a href="https://cite.mickschroeder.com/?q=30280635">30280635</a></li>
-												<li><a href="https://cite.mickschroeder.com/?q=https%3A%2F%2Fpubmed.ncbi.nlm.nih.gov%2F30280635%2F">https://pubmed.ncbi.nlm.nih.gov/...</a></li>
+												<li><a href="https://cite.mickschroeder.com/?q=https%3A%2F%2Fpubmed.ncbi.nlm.nih.gov%2F30280635%2F">https://pubmed...gov/...</a></li>
 											</ul>
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F522.svg"
@@ -89,7 +89,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F4DA.svg"
@@ -108,7 +108,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-						{/*	<section className="column feature">
+						{/*	<section className="column feature section-rounded">
 									<article>
 									<img
 										src="/static/images/openmoji/1F3F7.svg"
@@ -123,7 +123,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/270F.svg"
@@ -139,7 +139,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F525.svg"
@@ -157,7 +157,7 @@ class About extends React.PureComponent {
 							</section>
 						 </div>
 						<div className="column"> */}
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/E1C1.svg"
@@ -174,7 +174,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/E25B.svg"
@@ -189,7 +189,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F4E4.svg"
@@ -204,7 +204,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F468-200D-1F4BB.svg"
@@ -221,7 +221,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/E045.svg"
@@ -247,7 +247,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+							<section className="column feature section-rounded">
 								<article>
 									<img
 										src="/static/images/openmoji/1F9E9.svg"
@@ -267,7 +267,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							{/* <section className="column feature">
+							{/* <section className="column feature section-rounded">
 								<img
 									src="/static/images/about/link.svg"
 									className="feature-icon"
