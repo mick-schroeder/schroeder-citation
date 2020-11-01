@@ -108,7 +108,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-							<section className="column feature">
+						{/*	<section className="column feature">
 									<article>
 									<img
 										src="/static/images/openmoji/1F3F7.svg"
@@ -119,9 +119,7 @@ class About extends React.PureComponent {
 									/>
 									<h2 className="h4">Manual entry</h2>
 									<p>
-										If automatic import doesn’t find what you’re looking for or
-										you’re entering something without a URL or identifier, you can
-										enter the reference information by hand.
+										
 									</p>
 								</article>
 							</section>
@@ -157,7 +155,7 @@ class About extends React.PureComponent {
 									</p>
 								</article>
 							</section>
-						{/* </div>
+						 </div>
 						<div className="column"> */}
 							<section className="column feature">
 								<article>
@@ -171,8 +169,8 @@ class About extends React.PureComponent {
 									<h2 className="h4">Style selection</h2>
 									<p>
 										Format your bibliography using AMA, APA, MLA, Chicago / Turabian,
-										or any of the 9,000+
-										other <a href="http://citationstyles.org/">CSL</a> styles.
+										or any of the 9,000+ other <a href="http://citationstyles.org/">Citation Style Language (CSL)</a> styles <a href="https://github.com/citation-style-language/styles">maintained</a> by CSL project members.
+										For more information, check out <a href="http://citationstyles.org/" rel="nofollow">CitationStyles.org</a> and the <a href="https://github.com/citation-style-language/styles/wiki">repository wiki</a>.
 									</p>
 								</article>
 							</section>
@@ -185,11 +183,9 @@ class About extends React.PureComponent {
 										height="66"
 										alt=""
 									/>
-									<h2 className="h4">Copy Citation / Note</h2>
+									<h2 className="h4">Copy In-Text Citation and Notes</h2>
 									<p>
-										As you’re writing, you can quickly generate parenthetical
-										citations or footnotes /endnotes to paste into your document
-										without typing names or dates by hand.
+										Click the "Copy Note" icon for in-text citations and endnotes / footnotes.
 									</p>
 								</article>
 							</section>
@@ -202,13 +198,9 @@ class About extends React.PureComponent {
 										height="66"
 										alt=""
 									/>
-									<h2 className="h4">Export</h2>
+									<h2 className="h4">Export Bibliography</h2>
 									<p>
-										Copy a formatted bibliography to the
-										clipboard and paste it into your document. You can also
-										export HTML to add to a webpage, an RTF document to open
-										in a word processor, or a RIS or BibTeX file to import into a
-										reference manager.
+										Export your bibliography into many formats. Copy a formatted bibliography to your clipboard, HTML (for websites) or Download .RTF (for word processors), .RIS, .BibTeX, or save to Zotero.
 									</p>
 								</article>
 							</section>
@@ -224,9 +216,34 @@ class About extends React.PureComponent {
 									<h2 className="h4">On-device Autosave</h2>
 									<p>
 										Your bibliography automatically saves to your browser’s local storage.
-										Note, if you’re using private / incognito mode in your
-										browser, your bibliography will be cleared when you close the
-										window.
+										<br />
+										<b>Warning:</b> Clear your browser cache or use incognito mode if working with sensitive research.
+									</p>
+								</article>
+							</section>
+							<section className="column feature">
+								<article>
+									<img
+										src="/static/images/openmoji/E045.svg"
+										className="feature-icon"
+										width="66"
+										height="66"
+										alt=""
+									/>
+									<h2 className="h4">Open Source</h2>
+									<p>
+									Based on <a href="https://github.com/zotero/bib-web" rel="external">ZoteroBib</a>. 
+									This program is free software: you can redistribute it and/or modify it 
+									under the terms of the <a href="https://www.gnu.org/licenses/agpl.html" rel="external">GNU Affero General Public License</a> as published 
+									by the <a href="https://www.fsf.org/" rel="external">Free Software Foundation</a>.
+									<ul>
+									<li>
+										<a href="https://github.com/mick-schroeder/schroeder-cite" rel="external">Project on GitHub</a>
+									</li>	
+									<li>
+										<a href="https://github.com/zotero/bib-web" rel="external">ZoteroBib Project on GitHub</a>
+									</li>
+									</ul>
 									</p>
 								</article>
 							</section>
@@ -244,7 +261,7 @@ class About extends React.PureComponent {
 									Automatically load the current page in your browser. 
 									<ul>
 									<li>
-										<a href="https://chrome.google.com/webstore/detail/mick-schroeders-citation/gocmebnobccjiigdnakfmlieghedgdhk">Google Chrome Web Store</a>
+										<a href="https://chrome.google.com/webstore/detail/mick-schroeders-citation/gocmebnobccjiigdnakfmlieghedgdhk" rel="external">Google Chrome Web Store</a>
 									</li>	
 									</ul>
 									</p>
@@ -274,21 +291,7 @@ class About extends React.PureComponent {
 					>
 						Cool. Cool-cool-cool. Let’s start!
 					</Button>
-					<p className="support">
-						
-						{/* <span className="d-xs-block d-sm-inline">Still have questions?</span> */}
-						{ ' ' }
-						{/* Check the <a href="/faq.html">Frequently Asked Questions (FAQ)</a> */}
-						<a href="https://github.com/mick-schroeder/schroeder-citation">
-						<img
-									src="/static/images/openmoji/E045.svg"
-									width="66"
-									height="66"
-									alt=""
-						/><br/>
-						Open-Source Software based on ZoteroBib<br/>
-						Code available on GitHub
-						</a></p>
+					<p className="support"></p>
 			</section>
 		);
 	}
