@@ -21,6 +21,7 @@ const {  dedupMultipleChoiceItems,
 	isNoteStyle,
 	isNumericStyle,
 	isSentenceCaseStyle,
+	isUppercaseSubtitlesStyle,
 	parseIdentifier,
 	processMultipleChoiceItems,
 	processSentenceCaseAPAItems,
@@ -173,17 +174,17 @@ class Container extends React.Component {
 		if((this.state.isReadOnly !== state.isReadOnly)
 			|| (this.state.citationStyle !== state.citationStyle)
 		) {
-			if(isSentenceCaseStyle(this.state.citationStyle) &&
-				this.state.isConfirmingStyleSwitch != state.isConfirmingStyleSwitch
-			) {
-				let processedItems = processSentenceCaseAPAItems(this.bib.itemsRaw);
-				for (let [index, item] of processedItems.entries()) {
-					this.bib.updateItem(index, item);
-				}
-			}
-
 			try {
-				const cslData = await retrieveStyle(this.state.citationStyle);
+				const cslDataXmls = await retrieveStyle(this.state.citationStyle);
+				if(isSentenceCaseStyle(this.state.citationStyle, cslDataXmls) &&
+					this.state.isConfirmingStyleSwitch != state.isConfirmingStyleSwitch
+				) {
+					let processedItems = processSentenceCaseAPAItems(this.bib.itemsRaw);
+					for (let [index, item] of processedItems.entries()) {
+						this.bib.updateItem(index, item);
+					}
+				}
+
 				await this.prepareCiteproc(
 					this.state.citationStyle,
 					this.state.isReadOnly ? this.bibRemote : this.bib,
@@ -191,8 +192,10 @@ class Container extends React.Component {
 				);
 				localStorage.setItem('schroeder-cite-citation-style', this.state.citationStyle);
 				this.setState({
-					isNoteStyle: isNoteStyle(cslData),
-					isNumericStyle: isNumericStyle(cslData),
+					isNoteStyle: isNoteStyle(cslDataXmls),
+					isNumericStyle: isNumericStyle(cslDataXmls),
+					isSentenceCaseStyle: isSentenceCaseStyle(this.state.citationStyle, cslDataXmls),
+					isUppercaseSubtitlesStyle: isUppercaseSubtitlesStyle(this.state.citationStyle, cslDataXmls),
 					bibliography: this.bibliography
 				});
 			} catch(e) {
@@ -220,7 +223,7 @@ class Container extends React.Component {
 			this.state.citationStyle !== state.citationStyle &&
 			this.state.isConfirmingStyleSwitch === state.isConfirmingStyleSwitch
 		) {
-			if(isSentenceCaseStyle(this.state.citationStyle)) {
+			if(this.state.isSentenceCaseStyle) {
 				this.setState({
 					citationStyle: state.citationStyle,
 					unconfirmedCitationStyle: this.state.citationStyle,
@@ -947,7 +950,7 @@ class Container extends React.Component {
 	}
 
 	addItem(item) {
-		if(isSentenceCaseStyle(this.state.citationStyle)) {
+		if(this.state.isSentenceCaseStyle) {
 			this.bib.addItem(processSentenceCaseAPAItems([item])[0]);
 		} else {
 			this.bib.addItem(item);
