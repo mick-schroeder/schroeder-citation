@@ -223,5 +223,17 @@ nav.flexbox {
     display: block; 
     text-align:center;
     width: 100%;
+    @media(min-width: $bp-sm) { 
+        width: 100%;
+    }
+    @media(min-width: $bp-md) { 
+        width: 100%;
+    }
+    @media(min-width: $bp-lg) { 
+        width: 100%;
+    }
+    @media(min-width: $bp-xl) { 
+        width: 100%;
+    }
 }
 
