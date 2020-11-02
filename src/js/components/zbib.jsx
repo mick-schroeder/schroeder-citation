@@ -99,7 +99,7 @@ class ZBib extends React.PureComponent {
 										style={{ display: 'block' }}
 										format='auto'
 										responsive='true'
-										className='adsbygoogle advertisement-alpha'
+										className='advertisement-alpha'
 										/>
 										</div>
 									</aside>
@@ -146,14 +146,16 @@ class ZBib extends React.PureComponent {
 						
 						{
 							!this.props.isReadOnly && (
+								<div class="container-fullwidth nav">
 								<AdSense.Google
 								client='ca-pub-6344797609391119'
 								slot='3922555336'
 								style={{ display: 'block' }}
 								format='auto'
 								responsive='true'
-								className='adsbygoogle advertisement-bravo'
+								className='advertisement-bravo'
 								/>
+								</div>
 							)
 						}
 						
