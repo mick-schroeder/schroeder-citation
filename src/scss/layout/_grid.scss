@@ -9,11 +9,12 @@
     
     @media (min-width: $bp-md) {
         width: auto; // Reset
-        width: calc(100% - #{$space-xxl});
+        width: calc(100% - #{$space-md});
 	}
 
-	@media (min-width: $bp-lg) {
-	//	max-width: 768px;
+	@media (min-width: $bp-xl) {
+    //max-width: 768px;
+    width: calc(100% - #{$space-xxl});
 	}
 }
 // .container {
