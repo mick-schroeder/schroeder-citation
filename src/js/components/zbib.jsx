@@ -99,7 +99,7 @@ class ZBib extends React.PureComponent {
 										style={{ display: 'block' }}
 										format='auto'
 										responsive='true'
-										className='adsbygoogle advertisement-alpha'
+										className='advertisement-alpha'
 										/>
 										</div>
 									</aside>
