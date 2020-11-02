@@ -133,7 +133,7 @@ class ZBib extends React.PureComponent {
 								}
 							
 						</div> 
-*/}
+	*/}
 						{
 							this.props.isReadOnly && (
 								<section className="section section-brand">
@@ -143,7 +143,20 @@ class ZBib extends React.PureComponent {
 								</section>
 							)
 						}
-
+						
+						{
+							!this.props.isReadOnly && (
+								<AdSense.Google
+								client='ca-pub-6344797609391119'
+								slot='3922555336'
+								style={{ display: 'block' }}
+								format='auto'
+								responsive='true'
+								className='adsbygoogle advertisement-bravo'
+								/>
+							)
+						}
+						
 						{
 							!this.props.isReadOnly && (
 								<About {...this.props} />
