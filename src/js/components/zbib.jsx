@@ -90,9 +90,8 @@ class ZBib extends React.PureComponent {
 										)
 									}
 								</div>
-								<div className="col ad" id="advert">
+								<div className="col ad">
 									<aside>
-										<div className="billboard">
 										<AdSense.Google
 										client='ca-pub-6344797609391119'
 										slot='3922555336'
@@ -101,7 +100,6 @@ class ZBib extends React.PureComponent {
 										responsive='true'
 										className='advertisement-alpha'
 										/>
-										</div>
 									</aside>
 								</div>
 								<div className="col bibl">

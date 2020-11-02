@@ -8,6 +8,3 @@ data
 config/local*.json
 .npmrc
 .nyc_output
-src/static/icons
-src/static/js/citeproc.js
-src/static/locales
