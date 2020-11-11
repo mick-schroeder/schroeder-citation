@@ -1030,6 +1030,18 @@ class Container extends React.Component {
 		return copyData;
 	}
 
+	getCitationDOI() {
+		var DOI;
+		
+		if(this.state.itemUnderReview.DOI) {
+
+		DOI = this.state.itemUnderReview.DOI;
+
+		}
+		
+		return DOI;
+	}
+
 	getFilenameCopyData(format) {
 		var copyData = '';
 
@@ -1158,6 +1170,7 @@ class Container extends React.Component {
 			getCopyData = { this.getCopyData.bind(this) }
 			getCitationCopyData = { this.getCitationCopyData.bind(this) }
 			getFilenameCopyData = { this.getFilenameCopyData.bind(this) }
+			getCitationDOI = { this.getCitationDOI.bind(this) }
 			getFileData = { this.getFileData.bind(this) }
 			onCitationCopy = { this.handleCitationCopy.bind(this) }
 			onCitationCopyCancel = { this.handleCitationCopyCancel.bind(this) }

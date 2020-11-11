@@ -3,10 +3,15 @@
 //
 
 .cite-tools {
-	text-align: center;
+	
+	h3 {
+		display: inline-block;
+		text-align: left;
+	}
 
 	.id-input-container {
-		//display: flex;
+		//display: flex;		
+		text-align: center;
 		margin-bottom: $space-sm;
 
 		@media (min-width: $bp-md) {
@@ -15,19 +20,25 @@
 	}
 
 	.input-group {
-		margin-right: $space-min;
+		//margin-right: $space-min;
+
 	}
 
-	button {
+	.btn-lg {
 		margin-top: 1em;
+	}
+
+	.btn-sm {
+		float: right;
+		margin-top: 1.5em;
 	}
 
 	.form-control {
 		transition: border $input-transition, box-shadow $input-transition, padding $input-transition;
 
 		&:focus {
-			padding-top: ($input-padding-y-lg - 2px);
-			padding-bottom: ($input-padding-y-lg - 2px);
+			//padding-top: ($input-padding-y-lg - 2px);
+			//padding-bottom: ($input-padding-y-lg - 2px);
 		}
 	}
 }

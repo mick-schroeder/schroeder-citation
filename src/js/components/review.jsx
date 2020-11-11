@@ -42,24 +42,24 @@ class Review extends React.PureComponent {
 			<section className="section section-review review">
 				<h2 className="sr-only">New item …</h2>
 				<div className="container">
-					<div
+					<div className="citation"
 						dangerouslySetInnerHTML={ { __html: div.innerHTML } }
 					/>
 					<div className="actions">
 						<Button
-							className="btn-outline-secondary btn-min-width"
+							className="btn-outline-primary btn-min-width btn-sm"
 							onClick={ this.handleDismiss.bind(this) }
 						>
 							Close
 						</Button>
 						<Button
-							className="btn-outline-secondary btn-min-width"
+							className="btn-outline-primary btn-min-width btn-sm"
 							onClick={ this.handleDelete.bind(this) }
 						>
 							Delete
 						</Button>
 						<Button
-							className="btn-secondary btn-min-width"
+							className="btn-outline-secondary btn-min-width btn-sm"
 							onClick={ this.handleEdit.bind(this) }
 						>
 							Edit

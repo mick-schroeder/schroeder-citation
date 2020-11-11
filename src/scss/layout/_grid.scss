@@ -63,7 +63,9 @@
         .row {
          flex-wrap: wrap;
          display: flex;
+         display: -ms-flexbox;
          flex-direction: row;
+         -ms-flex-direction: row
          }
         .col.ad {
             display: flex;
@@ -89,12 +91,13 @@
     @media (min-width: $bp-xl) {
         .row {
          flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
          }
         .col.ad {
-            display: flex;
             flex: 0;
             margin: 8px 1.5vh;
             width: 100%;
+            -ms-flex: 0;
         }
         .col.content {
             flex: 1;
@@ -214,22 +217,10 @@ nav.flexbox {
 }
 
 .advertisement-bravo {
-    margin: 0 auto; 
+    margin: $space-md auto 0 auto;
     float: none; 
     display: block; 
     text-align:center;
     width: 100%;
-    @media(min-width: $bp-sm) { 
-        width: 100%;
-    }
-    @media(min-width: $bp-md) { 
-        width: 100%;
-    }
-    @media(min-width: $bp-lg) { 
-        width: 100%;
-    }
-    @media(min-width: $bp-xl) { 
-        width: 100%;
-    }
 }
 

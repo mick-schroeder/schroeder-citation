@@ -71,7 +71,7 @@ class ZBib extends React.PureComponent {
 							))
 							}
 						</div>
-						<div className="fullwidth-container">
+						<div className="container-fullwidth">
 							<div className="row">
 								<div className="col content">
 									{
@@ -82,7 +82,6 @@ class ZBib extends React.PureComponent {
 													<Brand />
 													<h3>Citation style</h3>
 													<StyleSelector {...this.props} />
-													<h3>Enter query</h3>
 													<CiteTools {...this.props} />
 													<Review {...this.props} />
 												</div>
@@ -144,7 +143,7 @@ class ZBib extends React.PureComponent {
 						
 						{
 							!this.props.isReadOnly && (
-								<div class="container-fullwidth">
+								<div className="container-fullwidth">
 								<AdSense.Google
 								client='ca-pub-6344797609391119'
 								slot='3922555336'

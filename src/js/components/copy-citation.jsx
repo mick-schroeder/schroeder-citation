@@ -75,6 +75,23 @@ class ExportDialog extends React.Component {
 		this.handleCopy('filename');
 	}
 
+	handleUnpaywallButtonClick() {
+		
+		var DOI = encodeURI(this.props.getCitationDOI());
+
+		if (DOI) {
+			window.open('https://unpaywall.org/' + DOI, '_blank', 'noopener,noreferrer');
+		}
+	}
+
+	handleOAButtonClick() {
+		var DOI = encodeURI(this.props.getCitationDOI());
+
+		if (DOI) {
+			window.open('https://openaccessbutton.org/?apikey=6abfafef46e8672c525237db494b01&doi=' + DOI, '_blank', 'noopener,noreferrer');
+		}
+	}
+
 	render() {
 		const isCitationCopied = this.state.clipboardConfirmations['citation'];
 		const isFilenameCopied = this.state.clipboardConfirmations['filename'];
@@ -83,7 +100,7 @@ class ExportDialog extends React.Component {
 			<div className="export-tools">
 					<Button
 						disabled={ this.props.items.length === 0 }
-						className='btn btn-secondary copy-to-clipboard'
+						className='btn btn-secondary btn-sm copy-to-clipboard'
 						onClick={ this.handleFilenameCopyToClipboardClick.bind(this) }
 					>
 						<span className={ cx('inline-feedback', { 'active': isFilenameCopied }) }>
@@ -91,9 +108,10 @@ class ExportDialog extends React.Component {
 							<span className="shorter feedback" aria-hidden={ isFilenameCopied }>Copied!</span>
 						</span>
 					</Button>
+					
 					<Button
 						disabled={ this.props.items.length === 0 }
-						className='btn btn-secondary copy-to-clipboard'
+						className='btn btn-secondary btn-sm copy-to-clipboard'
 						onClick={ this.handleCitationCopyToClipboardClick.bind(this) }
 					>
 						<span className={ cx('inline-feedback', { 'active': isCitationCopied }) }>
@@ -101,7 +119,26 @@ class ExportDialog extends React.Component {
 							<span className="shorter feedback" aria-hidden={ isCitationCopied }>Copied!</span>
 						</span>
 					</Button>
+					<br/ >
+					<p>Skip the paywall. Free, full-text PDF:&nbsp;&nbsp;
+					<Button
+				key="unpaywall-button"
+				className="btn btn-outline-light btn-min-width btn-sm"
+				onClick={ this.handleUnpaywallButtonClick.bind(this) }
+
+			>
+				Unpaywall
+			</Button>
+			<Button
+				key="oa-button"
+				className="btn btn-outline-light btn-min-width btn-sm"
+				onClick={ this.handleOAButtonClick.bind(this) }
+			>
+				Open Access
+			</Button>
+				</p>
 			</div>
+			
 		);
 	}
 
@@ -112,6 +149,7 @@ class ExportDialog extends React.Component {
 	static propTypes = {
 		getCitationCopyData: PropTypes.func.isRequired,
 		getFilenameCopyData: PropTypes.func.isRequired,
+		getCitationDOI: PropTypes.func.isRequired,
 		isReadOnly: PropTypes.bool,
 		items: PropTypes.array,
 		match: PropTypes.object,

@@ -10,16 +10,18 @@ class CiteTools extends React.PureComponent {
 	render() {
 		return (
 			<div className="cite-tools">
-				<IdInput
-					identifier={ this.props.identifier }
-					isTranslating={ this.props.isTranslating }
-					onTranslationRequest={ this.props.onTranslationRequest }
-				/>
+				<h3>Enter query</h3>
 				<Button onClick={ () => { this.props.onEditorOpen(); } }
 					className="btn-sm btn-outline-secondary"
 				>
 					Add a Manual Entry
 				</Button>
+				<IdInput
+					identifier={ this.props.identifier }
+					isTranslating={ this.props.isTranslating }
+					onTranslationRequest={ this.props.onTranslationRequest }
+				/>
+
 			</div>
 		);
 	}
