@@ -84,7 +84,7 @@ class About extends React.PureComponent {
 										Provide a persistent "address" to many types of work, from journal articles to research data sets.
 										<ul>
 											<li><a href="https://cite.mickschroeder.com/?q=10.1126%2Fscience.169.3946.635">10.1126/science.169.3946.635</a></li>
-											<li><a href="https://cite.mickschroeder.com/?q=https%3A%2F%2Fdoi.org%2F10.1126%2Fscience.169.3946.635">https://doi.org/...</a></li>
+											<li><a href="https://cite.mickschroeder.com/?q=https%3A%2F%2Fdoi.org%2F10.1038/nature21360">https://doi.org/...</a></li>
 										</ul>
 									</p>
 								</article>
