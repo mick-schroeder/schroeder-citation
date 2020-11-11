@@ -143,7 +143,7 @@ class ZBib extends React.PureComponent {
 						
 						{
 							!this.props.isReadOnly && (
-								<div className="container-fullwidth">
+								<div className="container">
 								<AdSense.Google
 								client='ca-pub-6344797609391119'
 								slot='3922555336'
@@ -158,7 +158,9 @@ class ZBib extends React.PureComponent {
 						
 						{
 							!this.props.isReadOnly && (
+								<div className="container">
 								<About {...this.props} />
+								</div>
 							)
 						}
 

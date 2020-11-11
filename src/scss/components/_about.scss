@@ -30,10 +30,12 @@
 
 	.column {
 		@media (min-width: $bp-lg) {
-			flex: 1 1 50%;
+			flex: 1;
+			min-width: 450px;
 		}
 		@media (min-width: $bp-xl) {
-			flex: 1 1 30%;
+			flex: 1;
+			min-width: 450px;
 		}
 	}
 
