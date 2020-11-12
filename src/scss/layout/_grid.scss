@@ -220,26 +220,8 @@ nav.flexbox {
     }
 }
 
-.advertisement-alpha {
-    width: 100%;
-    height: 250px;
-    min-height: 100px;
-    max-height: 300px;  
-    @media(min-width: $bp-sm) { 
-        width: 300px;
-        height: 600px;
-        min-width: 0px;
-        max-width: 330px;
-        min-height: 300px;
-        max-height: 600px;
-    }
-}
-
-.advertisement-bravo {
-    margin: $space-md auto 0 auto;
-    float: none; 
-    display: block; 
+.advertisement {
+    margin: 0 auto;
     text-align:center;
-    width: 100%;
 }
 

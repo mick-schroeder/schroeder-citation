@@ -92,9 +92,7 @@ class ZBib extends React.PureComponent {
 										<AdSense.Google
 										client='ca-pub-6344797609391119'
 										slot='3922555336'
-										style={{ display: 'block' }}
-										format='auto'
-										responsive='true'
+										className='advertisement'
 										/>
 									</aside>
 									</div>
@@ -143,9 +141,7 @@ class ZBib extends React.PureComponent {
 								<AdSense.Google
 								client='ca-pub-6344797609391119'
 								slot='3922555336'
-								style={{ display: 'block' }}
-								format='auto'
-								responsive='true'
+								className='advertisement'
 								/>
 								</div>
 							)
