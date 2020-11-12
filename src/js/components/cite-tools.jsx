@@ -12,7 +12,7 @@ class CiteTools extends React.PureComponent {
 			<div className="cite-tools">
 				<h3>Enter query</h3>
 				<Button onClick={ () => { this.props.onEditorOpen(); } }
-					className="btn-sm btn-outline-secondary"
+					className="btn-sm btn-outline-light"
 				>
 					Add a Manual Entry
 				</Button>

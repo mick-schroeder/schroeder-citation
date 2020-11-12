@@ -8,7 +8,7 @@
 	position: relative;
 	
 	@media (min-width: $bp-sm) {
-		min-height: 600px;
+		min-height: 400px;
 	}
 	
 	@media (min-width: $bp-md) {
@@ -23,10 +23,6 @@
 		padding: 0.7em 0.7em;
 		color: #61b2e4;
 		z-index: $zindex-menu;
-	}
-
-	.container {
-		//padding: 0.5em;
 	}
 
 	section.brand {

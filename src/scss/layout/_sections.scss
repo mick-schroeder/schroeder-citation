@@ -4,11 +4,10 @@
 
 .section {
 	padding: $section-padding-mobile 0;
-	margin: 0.5em 0;
-	width: 100%;
+	margin: $space-sm 0;
 	@media (min-width: $bp-md) {
 		padding: $section-padding 0.5em;
-		margin: 0.5em;
+		margin: $space-md 0.5em;
 		//min-width: 600px;
 	}
 

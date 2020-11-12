@@ -71,9 +71,7 @@ class ZBib extends React.PureComponent {
 							))
 							}
 						</div>
-						<div className="container-fullwidth">
-							<div className="row">
-								<div className="col content">
+						<div className="container">
 									{
 										!this.props.isReadOnly && (
 											<section className="section section-rounded section-cite">
@@ -88,8 +86,8 @@ class ZBib extends React.PureComponent {
 											</section>
 										)
 									}
-								</div>
-								<div className="col ad">
+									</div>
+									<div className="container-fullwidth">
 									<aside>
 										<AdSense.Google
 										client='ca-pub-6344797609391119'
@@ -97,11 +95,10 @@ class ZBib extends React.PureComponent {
 										style={{ display: 'block' }}
 										format='auto'
 										responsive='true'
-										className='advertisement-alpha'
 										/>
 									</aside>
-								</div>
-								<div className="col bibl">
+									</div>
+									<div className="container">
 									<BibliographySection {...this.props} />
 									<section className="section section-rounded section-export">
 										<div className="container">
@@ -109,8 +106,7 @@ class ZBib extends React.PureComponent {
 											<ExportTools {...this.props} />
 										</div>
 									</section>
-								</div>
-							</div>
+
 						</div>
 {/* 						<div className="container">
 
@@ -143,14 +139,13 @@ class ZBib extends React.PureComponent {
 						
 						{
 							!this.props.isReadOnly && (
-								<div className="container">
+								<div className="container-fullwidth">
 								<AdSense.Google
 								client='ca-pub-6344797609391119'
 								slot='3922555336'
 								style={{ display: 'block' }}
 								format='auto'
 								responsive='true'
-								className='advertisement-bravo'
 								/>
 								</div>
 							)
