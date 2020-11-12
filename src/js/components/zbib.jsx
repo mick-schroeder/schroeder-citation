@@ -71,18 +71,15 @@ class ZBib extends React.PureComponent {
 							))
 							}
 						</div>
-						<div className="container">
-									<aside>
-										<AdSense.Google
-										client='ca-pub-6344797609391119'
-										slot='3922555336'
-										style={{ display: 'inline-block' }}
-										format='auto'
-										responsive='true'
-										layoutKey='-gw-1+2a-9x+5c'
-										className='advertisement'
-										/>
-									</aside>
+						<div className="container-fullwidth">
+									<AdSense.Google
+									client='ca-pub-6344797609391119'
+									slot='3922555336'
+									style={{ display: 'block' }}
+									format='auto'
+									responsive='true'
+									className='advertisement'
+									/>
 						</div>
 						<div className="container">
 									{
@@ -101,16 +98,14 @@ class ZBib extends React.PureComponent {
 									}
 									</div>
 									<div className="container-fullwidth">
-									<aside>
-										<AdSense.Google
-										client='ca-pub-6344797609391119'
-										slot='3922555336'
-										style={{ display: 'block' }}
-										format='auto'
-										responsive='true'
-										className='advertisement'
-										/>
-									</aside>
+									<AdSense.Google
+									client='ca-pub-6344797609391119'
+									slot='3922555336'
+									style={{ display: 'block' }}
+									format='auto'
+									responsive='true'
+									className='advertisement'
+									/>
 									</div>
 									<div className="container">
 									<BibliographySection {...this.props} />
@@ -154,7 +149,6 @@ class ZBib extends React.PureComponent {
 						{
 							!this.props.isReadOnly && (
 								<div className="container-fullwidth">
-								<aside>
 									<AdSense.Google
 									client='ca-pub-6344797609391119'
 									slot='3922555336'
@@ -163,7 +157,6 @@ class ZBib extends React.PureComponent {
 									responsive='true'
 									className='advertisement'
 									/>
-								</aside>
 								</div>
 							)
 						}
