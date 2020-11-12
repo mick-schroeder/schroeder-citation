@@ -76,7 +76,7 @@ class ZBib extends React.PureComponent {
 										<AdSense.Google
 										client='ca-pub-6344797609391119'
 										slot='3922555336'
-										style={{ display: 'block' }}
+										style={{ display: 'inline-block' }}
 										format='auto'
 										responsive='true'
 										layoutKey='-gw-1+2a-9x+5c'

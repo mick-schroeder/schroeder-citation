@@ -223,5 +223,7 @@ nav.flexbox {
 .advertisement {
     margin: 0 auto;
     text-align:center;
+
 }
 
+@media(min-width: $bp-md) { .advertisement { width: 728px; height: 90px; } }
