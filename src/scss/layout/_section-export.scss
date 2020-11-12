@@ -11,7 +11,7 @@
 		padding-top: $section-padding-mobile; // t height
 
 		@media (min-width: $bp-md) {
-			padding-top: $section-padding - 12px; // t height
+			padding-top: $section-padding; // t height
 		}
 	}
 

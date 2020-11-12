@@ -71,6 +71,18 @@ class ZBib extends React.PureComponent {
 							))
 							}
 						</div>
+						<div className="container-fullwidth">
+									<aside>
+										<AdSense.Google
+										client='ca-pub-6344797609391119'
+										slot='3922555336'
+										style={{ display: 'block' }}
+										format='auto'
+										responsive='true'
+										className='advertisement'
+										/>
+									</aside>
+						</div>
 						<div className="container">
 									{
 										!this.props.isReadOnly && (
@@ -92,6 +104,9 @@ class ZBib extends React.PureComponent {
 										<AdSense.Google
 										client='ca-pub-6344797609391119'
 										slot='3922555336'
+										style={{ display: 'block' }}
+										format='auto'
+										responsive='true'
 										className='advertisement'
 										/>
 									</aside>
@@ -138,11 +153,16 @@ class ZBib extends React.PureComponent {
 						{
 							!this.props.isReadOnly && (
 								<div className="container-fullwidth">
-								<AdSense.Google
-								client='ca-pub-6344797609391119'
-								slot='3922555336'
-								className='advertisement'
-								/>
+								<aside>
+									<AdSense.Google
+									client='ca-pub-6344797609391119'
+									slot='3922555336'
+									style={{ display: 'block' }}
+									format='auto'
+									responsive='true'
+									className='advertisement'
+									/>
+								</aside>
 								</div>
 							)
 						}
