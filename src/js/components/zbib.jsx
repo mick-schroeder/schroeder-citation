@@ -71,7 +71,7 @@ class ZBib extends React.PureComponent {
 							))
 							}
 						</div>
-						<div className="container-fullwidth">
+						<div className="container">
 									<aside>
 										<AdSense.Google
 										client='ca-pub-6344797609391119'
