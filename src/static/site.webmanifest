@@ -1,6 +1,6 @@
 {
     "name":"Mick Schroeder's Citation Generator",
-    "short_name":"SchroederCite",
+    "short_name":"schroeder-cite",
     "icons":[
        {
           "src":"/static/android-chrome-192x192.png",
