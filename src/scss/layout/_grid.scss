@@ -223,4 +223,8 @@ nav.flexbox {
 .advertisement {
     margin: 0 auto;
     text-align:center;
+    min-width:320px;
+    max-width:970px;
+    width:100%;
+    height:90px;
 }
