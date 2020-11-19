@@ -226,5 +226,9 @@ nav.flexbox {
     min-width:320px;
     max-width:980px;
     width:100%;
-    height:90px;
+    
+    @media (min-width: $bp-md) {
+        height:100px;
+        max-height: 250px;
+    }
 }
